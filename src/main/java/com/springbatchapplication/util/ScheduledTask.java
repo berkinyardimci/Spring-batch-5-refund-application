@@ -11,7 +11,7 @@ public class ScheduledTask {
 
     private final RefundService refundService;
 
-    @Scheduled(cron = "0 49 23 * * ?")
+    @Scheduled(cron = "0 0 0 * * ?")
     public void performScheduledRefunds() throws Exception {
         refundService.performRefunds();
     }

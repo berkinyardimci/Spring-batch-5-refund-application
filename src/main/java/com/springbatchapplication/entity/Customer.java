@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -17,6 +19,6 @@ public class Customer {
     private Long id;
     private String firstName;
     private String lastName;
-    private double balance;
+    private BigDecimal balance;
 
 }

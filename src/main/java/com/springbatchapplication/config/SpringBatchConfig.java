@@ -70,7 +70,7 @@ public class SpringBatchConfig {
 
     @Bean
     public Step sampleStep(JobRepository jobRepository, PlatformTransactionManager transactionManager) {
-        return new StepBuilder("step1",jobRepository).<Customer, Customer>chunk(10,transactionManager)
+        return new StepBuilder("processCustomerDataStep",jobRepository).<Customer, Customer>chunk(10,transactionManager)
                 .reader(customerReader())
                 .processor(customerProcessor())
                 .writer(customerWriter())

@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-@Getter
 public class RefundService {
 
     private final JobLauncher jobLauncher;
@@ -22,6 +21,4 @@ public class RefundService {
                 .toJobParameters();
         jobLauncher.run(refundJob, jobParameters);
     }
-
-
 }

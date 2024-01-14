@@ -1,6 +1,6 @@
-id,firstName,lastName,balance,from
-1,Dud,Ishak,300,nike
-2,Ahmet,son,300,adidas
-3,Serkan,bahar,300,apple
-4,Osaman,kıs,300,adidas
-7,Ali,yaz,400,nike
+id,firstName,lastName,balance
+1,Alex,Johnson,250
+2,Jordan,Martinez,300
+3,Morgan,Williams,500
+6,Casey,Smith,1000
+7,Tris,Garcia,400
